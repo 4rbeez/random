@@ -114,7 +114,8 @@ Understood. Since we're not calculating the optimal asset allocation using a spe
 
 I'll create a plot showing the mean-standard deviation frontier, highlighting the GMVP and Tangency Portfolio. Let's proceed with this visualization.
 
-![ded75af3-ab07-4944-bce8-60c01c69caeb](https://github.com/4rbeez/random/assets/41131044/41793c48-7737-4e81-9807-6593fd62de38)
+![equation](https://github.com/4rbeez/random/assets/41131044/65e58422-2fbb-4d76-843e-373314a023f4)
+
 
 
 ------------------
