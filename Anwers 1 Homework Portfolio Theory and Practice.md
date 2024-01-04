@@ -44,19 +44,15 @@ Problem 2 involves creating a mean-standard deviation frontier for different com
 
 The expected return of a portfolio (E[R]) is given by:
 
-![equation](https://github.com/4rbeez/random/assets/41131044/1414c1ea-e8b7-4813-9fd6-1c1cb9d2c8e9)
+![equation](https://github.com/4rbeez/random/assets/41131044/67907422-d2e4-4f4d-b0ea-b0cc91ad10bd)
 
-
-![equation](https://github.com/4rbeez/random/assets/41131044/beaf3807-8ef1-43eb-b86c-c8cce36e939b)
-
+![equation-1](https://github.com/4rbeez/random/assets/41131044/7e4c30fa-c31a-4bd3-9083-8420ccd6a67c)
 
 The standard deviation of the portfolio (σ) is calculated using:
 
-![equation](https://github.com/4rbeez/random/assets/41131044/f6b2003c-248f-4c85-a7d9-e4d89c2fa8aa)
+![equation](https://github.com/4rbeez/random/assets/41131044/55c82246-e886-45c6-a8c9-d90de9ccccb1)
 
-
-![equation](https://github.com/4rbeez/random/assets/41131044/0d755dd5-1dcc-4e31-9066-dc1777d4b36d)
-
+![equation-1](https://github.com/4rbeez/random/assets/41131044/4f3d0d69-f39f-4257-8a36-c353a8b3af44)
 
 We will create a range of portfolio combinations by varying w from 0 to 1 in increments (e.g., 0.1) and calculate the expected return and standard deviation for each combination. Let's begin these calculations using the data provided in your document.
 
@@ -80,20 +76,22 @@ To find the GMVP, we look for the portfolio with the lowest standard deviation f
 **Tangency Portfolio**
 The tangency portfolio can be found by maximizing the Sharpe ratio, which is the ratio of excess return (portfolio return minus the risk-free rate) to the standard deviation. The Sharpe ratio is given by:
 
-![equation](https://github.com/4rbeez/random/assets/41131044/924fb0a9-3aec-4571-9dd3-66534a3b8ae6)
+![equation](https://github.com/4rbeez/random/assets/41131044/1f5ef713-4d72-4320-9d75-37a1eeb92860)
 
 
 
-![equation](https://github.com/4rbeez/random/assets/41131044/451c05d5-3f06-434b-83ce-7fb9ed1dea03)
+
+![equation-1](https://github.com/4rbeez/random/assets/41131044/070fa2ba-8ca6-4983-aa50-b2a303a996c1)
+
 
 
 **Capital Allocation Line (CAL)**
 The Capital Allocation Line (CAL) is the line that connects the risk-free asset to the tangency portfolio in the risk-return space. The analytical expression for CAL is:
 
-![equation](https://github.com/4rbeez/random/assets/41131044/2a58577c-68f3-409f-971d-bf656c7c8345)
+![equation-1](https://github.com/4rbeez/random/assets/41131044/00192149-dd38-4c1b-9633-22ecf87b2eca)
 
+![equation](https://github.com/4rbeez/random/assets/41131044/6d21114d-30b3-42eb-99ab-6fb1ac1ed867)
 
-![equation](https://github.com/4rbeez/random/assets/41131044/5ec0d9da-a8ef-466d-b0dc-763107d590f2)
 
 
 First, let's identify the GMVP and the tangency portfolio. For the sake of this calculation, we'll assume a risk-free rate (which you need to provide if it differs). I'll use a hypothetical risk-free rate of 1% for these calculations.
