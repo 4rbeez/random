@@ -87,24 +87,25 @@ ChatGPT:
 1. **Bond Pricing Formula** :
 
 - The price of a bond is calculated as the present value (PV) of its future cash flows, which include coupon payments and the face value at maturity. The formula is:
-  Bond Price=∑t=1NC(1+YTM)t+FV(1+YTM)N\text{Bond Price} = \sum\_{t=1}^{N} \frac{C}{(1 + YTM)^t} + \frac{FV}{(1 + YTM)^N}Bond Price=∑t=1N​(1+YTM)tC​+(1+YTM)NFV​
+
+  ![equation](https://github.com/4rbeez/random/assets/41131044/5e1914b3-520e-4616-995f-b5ee1649d1f5)
+
   where:
-- CCC is the coupon payment per period.
-- YTMYTMYTM is the yield to maturity.
-- FVFVFV is the face value of the bond.
-- NNN is the number of periods until maturity.
+![equation](https://github.com/4rbeez/random/assets/41131044/2fc4166e-75f1-4a21-ba33-645137af418e)
+
 
 2. **Yield to Maturity (YTM) Calculation for Semiannual Coupons** :
 
-- The YTM for a bond with semiannual coupons is calculated using a trial and error method to solve the bond pricing formula for YTMYTMYTM, considering semiannual periods. Financial calculators or functions like `npf.rate` in Python can be used for this purpose.
+- The YTM for a bond with semiannual coupons is calculated using a trial and error method to solve the bond pricing formula for ![equation-1](https://github.com/4rbeez/random/assets/41131044/7d7b6727-22da-42f4-a98b-d9f2fd7c6f57) , considering semiannual periods. Financial calculators or functions like `npf.rate` in Python can be used for this purpose.
 
 3. **Internal Rate of Return (IRR) for Yield Curve Calculation** :
 
 - For the default-free bonds, I used the Internal Rate of Return (IRR) formula to calculate the yields. The IRR is the rate that sets the net present value of cash flows equal to zero. The formula is solved iteratively:
-  0=∑t=0NCFt(1+IRR)t0 = \sum\_{t=0}^{N} \frac{CF_t}{(1 + IRR)^t}0=∑t=0N​(1+IRR)tCFt​​
+- 
+![equation](https://github.com/4rbeez/random/assets/41131044/ac78dac3-95ab-4d24-a44c-ea0aab173761)
+
   where:
-- CFtCF_tCFt​ is the cash flow at time ttt.
-- IRRIRRIRR is the internal rate of return.
-- NNN is the total number of periods.
+
+![equation](https://github.com/4rbeez/random/assets/41131044/5dc4d55b-bd9c-43d2-86c7-a6095c808ef9)
 
 In the calculations, the bond prices were determined using the present value of future cash flows, considering the given yields, coupon rates, and face values. The yields for the default-free bonds were obtained using the IRR method, which considers the cash flows and market prices of the bonds.
